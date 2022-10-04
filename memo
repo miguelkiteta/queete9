@@ -1,0 +1,46 @@
+<div class="col-lg-12">
+    <form action="#" method="POST" enctype="multipart/form-data" class="col-7">
+    <div class="row">
+        <div class="col-12 my-2">
+            <label>Ville</label>
+            <input type="text"   name="ville" class="form-control" required>
+        </div>
+        <input type="text" value="<?php echo $_GET['idpok']; ?>">
+        <div class="col-12 my-2">
+            <label>Champion</label>
+            <input type="text"    name="champion" class="form-control" required>
+        </div> 
+        <div class="col-12 my-2">
+            <label>Type:</label>
+            <input type="text"   name="type" class="form-control" min="18" max="150" required>
+        </div>
+        <div class="col-12 my-2">
+            <label>Badge:</label>
+            <input type="text"  name="Badge" class="form-control" min="18" max="150" required>
+        </div>
+        <div class="col-12 my-3">
+            <label>Image:</label>
+            <input type="file"  name="image">
+        </div>
+        <div class="container-fluid">
+           <div class="text-right">
+           <input type="submit" name="updatePok" value="Modifier" class="btn btn-secondary btn-lg">
+           <!-- <button type="button" class="btn btn-danger btn-lg">Supprimer</button> -->
+           </div>
+        </div>
+        <!-- <div class="container">
+           <div class="col-12 my-3">
+                <input type="submit" name="submitUpdate"> 
+           </div>
+        </div>  -->
+        <div class="container">
+           <div class="col-12 my-3">
+            <div class="text-right">
+              <a href="index.php" class="btn btn-secondary btn-lg"> Retour</a>
+            </div>
+           </div>
+        </div>               
+    </div>
+</form>
+    </div>
+</div>
